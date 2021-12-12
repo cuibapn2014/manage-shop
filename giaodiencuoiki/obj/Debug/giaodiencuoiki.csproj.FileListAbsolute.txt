@@ -1,0 +1,10 @@
+C:\Users\admin\source\repos\giaodiencuoiki\giaodiencuoiki\bin\Debug\giaodiencuoiki.exe.config
+C:\Users\admin\source\repos\giaodiencuoiki\giaodiencuoiki\bin\Debug\giaodiencuoiki.exe
+C:\Users\admin\source\repos\giaodiencuoiki\giaodiencuoiki\bin\Debug\giaodiencuoiki.pdb
+C:\Users\admin\source\repos\giaodiencuoiki\giaodiencuoiki\obj\Debug\giaodiencuoiki.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\giaodiencuoiki\giaodiencuoiki\obj\Debug\giaodiencuoiki.Form1.resources
+C:\Users\admin\source\repos\giaodiencuoiki\giaodiencuoiki\obj\Debug\giaodiencuoiki.Properties.Resources.resources
+C:\Users\admin\source\repos\giaodiencuoiki\giaodiencuoiki\obj\Debug\giaodiencuoiki.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\giaodiencuoiki\giaodiencuoiki\obj\Debug\giaodiencuoiki.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\giaodiencuoiki\giaodiencuoiki\obj\Debug\giaodiencuoiki.exe
+C:\Users\admin\source\repos\giaodiencuoiki\giaodiencuoiki\obj\Debug\giaodiencuoiki.pdb
