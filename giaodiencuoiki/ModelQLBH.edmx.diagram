@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b3c2d58f3a7947b2b82cce5a05d46d76" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="QuanLyBanHangModel.Account" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.Customer" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.Invoice" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.Product" Width="1.5" PointX="8" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.ProductType" Width="1.5" PointX="5.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.Risk" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.User" Width="1.5" PointX="1.375" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="QuanLyBanHangModel.FK_Account_User" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.FK_Invoice_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.FK_Risk_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBanHangModel.FK_Product_ProductType" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="QuanLyBanHangModel.DetailInvoice" Width="1.5" PointX="10.25" PointY="3.125" />
+        <AssociationConnector Association="QuanLyBanHangModel.FK_DetailInvoice_Invoice" />
+        <AssociationConnector Association="QuanLyBanHangModel.FK_DetailInvoice_Product" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

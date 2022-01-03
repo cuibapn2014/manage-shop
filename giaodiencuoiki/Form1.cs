@@ -94,5 +94,15 @@ namespace giaodiencuoiki
         {
 
         }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_suahd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
