@@ -87,9 +87,12 @@ namespace giaodiencuoiki
 
         private void txt_idInvoice_TextChanged(object sender, EventArgs e)
         {
-            int idInvoice = Convert.ToInt32(txt_idInvoice.Text);
-            string customer = this.db.Invoices.Where(obj => obj.IdInvoice == idInvoice).First().Customer.Name;
-            txt_customer.Text = customer;
+            int idInvoice = txt_idInvoice.Text != "" ? Convert.ToInt32(txt_idInvoice.Text) : 0;
+            var customer = this.db.Invoices.Where(obj => obj.IdInvoice == idInvoice).FirstOrDefault();
+            if (customer != null)
+                txt_customer.Text = customer.Customer.Name.ToString();
+            else
+                txt_customer.Text = null;
         }
     }
 }

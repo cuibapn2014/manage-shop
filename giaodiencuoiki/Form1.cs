@@ -13,7 +13,7 @@ namespace giaodiencuoiki
 {
     public partial class Form1 : Form
     {
-        
+        private QuanLyBanHang db = new QuanLyBanHang();
         public Form1()
         {
             InitializeComponent();
@@ -22,87 +22,104 @@ namespace giaodiencuoiki
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            loadData();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void quảnLýBánHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            using (FrmQuanLyBanHang form = new QuanLyBanHang())
+            {
+                this.Hide();
+                form.ShowDialog();
+                this.Show();
+            }  
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void quảnLýKhoHàngToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            using (FrmQuanLyKhoHangcs form = new FrmQuanLyKhoHangcs())
+            {
+                this.Hide();
+                form.ShowDialog();
+                this.Show();
+            }
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void quảnLýRủiRoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            using (FrmQuanLyRuiRo form = new FrmQuanLyRuiRo())
+            {
+                this.Hide();
+                form.ShowDialog();
+                this.Show();
+            }
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            using (FormBaoCaoThongKe form = new FormBaoCaoThongKe())
+            {
+                this.Hide();
+                form.ShowDialog();
+                this.Show();
+            }
         }
 
-        private void bt_suasp_Click(object sender, EventArgs e)
+        private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (Modify.Account.Type == 1)
+            {
+                using (FormQuanLyNhanVien form = new FormQuanLyNhanVien())
+                {
+                    this.Hide();
+                    form.ShowDialog();
+                    this.Show();
+                }
+            }
+            else 
+            {
+                MessageBox.Show("Bạn không có quyền truy cập tính năng này", "Hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
-        private void label11_Click(object sender, EventArgs e)
+        private void btn_edit_Click(object sender, EventArgs e)
         {
-            label11.Font = new Font(label11.Font, FontStyle.Bold);
+            btn_save.Enabled = true;
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void btn_save_Click(object sender, EventArgs e)
         {
-
+            int idUser = Convert.ToInt32(txt_idUser.Text);
+            Account account = this.db.Accounts.Where(obj => obj.Id_User == idUser).FirstOrDefault();
+            User user = this.db.Users.Where(obj => obj.Id == idUser).FirstOrDefault();
+            account.Password = txt_password.Text;
+            user.Name = txt_name.Text;
+            user.Phone = txt_phone.Text;
+            user.Address = txt_address.Text;
+            user.Birthday = birthday.Value;
+            DialogResult dialog = MessageBox.Show("Bạn có chắn chắn rằng sẽ cập nhật mọi thứ", "Hệ thống", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                this.db.SaveChanges();
+                MessageBox.Show("Cập nhật thành công", "Hệ thống");
+            }
         }
 
-        private void chart2_Click(object sender, EventArgs e)
+        private void loadData()
         {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel25_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bt_suahd_Click(object sender, EventArgs e)
-        {
-
+            MyAccount account = Modify.Account;
+            txt_idUser.Text = account.User.Id.ToString();
+            txt_account.Text = account.Account;
+            txt_password.Text = account.Password;
+            txt_name.Text = account.User.Name;
+            txt_phone.Text = account.User.Phone;
+            txt_address.Text = account.User.Address;
+            birthday.Value = (DateTime) account.User.Birthday;
         }
     }
 }

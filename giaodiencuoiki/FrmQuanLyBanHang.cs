@@ -229,6 +229,7 @@ namespace giaodiencuoiki
             Invoice invoice = new Invoice
             {
                 IdCustomer = Convert.ToInt32(txt_idCustomer.Text),
+                Id_User = Modify.Account.User.Id,
                 CreatedAt = DateTime.Now
             };
             this.db.Invoices.Add(invoice);
@@ -265,6 +266,11 @@ namespace giaodiencuoiki
             {
                 data_invoice.DataSource = this.db.Invoices.ToList();
             }
+        }
+
+        public static implicit operator FrmQuanLyBanHang(QuanLyBanHang v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

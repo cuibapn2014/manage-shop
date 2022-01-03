@@ -27,3 +27,13 @@ D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\obj\Debug\giaodiencuoiki.Frm
 D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\obj\Debug\giaodiencuoiki.FrmQuanLyKhoHangcs.resources
 D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\obj\Debug\giaodiencuoiki.FrmQuanLyRuiRo.resources
 D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\obj\Debug\giaodiencuoiki.csproj.CopyComplete
+D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\bin\Debug\ClosedXML.dll
+D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\bin\Debug\ExcelNumberFormat.dll
+D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\bin\Debug\System.IO.Packaging.dll
+D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\bin\Debug\ClosedXML.pdb
+D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\bin\Debug\ClosedXML.xml
+D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\bin\Debug\ExcelNumberFormat.xml
+D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\obj\Debug\giaodiencuoiki.FormLogin.resources
+D:\Document\doc.3\LTCSDL\manage-shop\giaodiencuoiki\obj\Debug\giaodiencuoiki.FormQuanLyNhanVien.resources

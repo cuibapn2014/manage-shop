@@ -89,10 +89,10 @@ namespace giaodiencuoiki
             this.txt_name = new System.Windows.Forms.TextBox();
             this.txt_idCustomer_first = new System.Windows.Forms.TextBox();
             this.tab_invoice = new System.Windows.Forms.TabPage();
-            this.data_invoice = new System.Windows.Forms.DataGridView();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txt_idInvoice = new System.Windows.Forms.TextBox();
             this.btn_findInvoice = new System.Windows.Forms.Button();
+            this.txt_idInvoice = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.data_invoice = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tab_sell.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -690,34 +690,8 @@ namespace giaodiencuoiki
             this.tab_invoice.Padding = new System.Windows.Forms.Padding(3);
             this.tab_invoice.Size = new System.Drawing.Size(998, 569);
             this.tab_invoice.TabIndex = 2;
-            this.tab_invoice.Text = "Quản lý hóa đơn";
+            this.tab_invoice.Text = "Danh sách hóa đơn";
             this.tab_invoice.UseVisualStyleBackColor = true;
-            // 
-            // data_invoice
-            // 
-            this.data_invoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_invoice.Location = new System.Drawing.Point(6, 50);
-            this.data_invoice.Name = "data_invoice";
-            this.data_invoice.RowHeadersWidth = 51;
-            this.data_invoice.RowTemplate.Height = 24;
-            this.data_invoice.Size = new System.Drawing.Size(986, 513);
-            this.data_invoice.TabIndex = 0;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 18);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(83, 17);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Mã hóa đơn";
-            // 
-            // txt_idInvoice
-            // 
-            this.txt_idInvoice.Location = new System.Drawing.Point(96, 18);
-            this.txt_idInvoice.Name = "txt_idInvoice";
-            this.txt_idInvoice.Size = new System.Drawing.Size(221, 22);
-            this.txt_idInvoice.TabIndex = 2;
             // 
             // btn_findInvoice
             // 
@@ -728,6 +702,32 @@ namespace giaodiencuoiki
             this.btn_findInvoice.Text = "Tìm kiếm";
             this.btn_findInvoice.UseVisualStyleBackColor = true;
             this.btn_findInvoice.Click += new System.EventHandler(this.btn_findInvoice_Click);
+            // 
+            // txt_idInvoice
+            // 
+            this.txt_idInvoice.Location = new System.Drawing.Point(96, 18);
+            this.txt_idInvoice.Name = "txt_idInvoice";
+            this.txt_idInvoice.Size = new System.Drawing.Size(221, 22);
+            this.txt_idInvoice.TabIndex = 2;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 18);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(83, 17);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Mã hóa đơn";
+            // 
+            // data_invoice
+            // 
+            this.data_invoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_invoice.Location = new System.Drawing.Point(6, 50);
+            this.data_invoice.Name = "data_invoice";
+            this.data_invoice.RowHeadersWidth = 51;
+            this.data_invoice.RowTemplate.Height = 24;
+            this.data_invoice.Size = new System.Drawing.Size(986, 513);
+            this.data_invoice.TabIndex = 0;
             // 
             // FrmQuanLyBanHang
             // 

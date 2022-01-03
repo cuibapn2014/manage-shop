@@ -16,7 +16,7 @@ namespace giaodiencuoiki
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmQuanLyBanHang());
+            Application.Run(new FormLogin());
         }
     }
 }
