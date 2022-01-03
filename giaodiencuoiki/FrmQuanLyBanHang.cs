@@ -267,10 +267,5 @@ namespace giaodiencuoiki
                 data_invoice.DataSource = this.db.Invoices.ToList();
             }
         }
-
-        public static implicit operator FrmQuanLyBanHang(QuanLyBanHang v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

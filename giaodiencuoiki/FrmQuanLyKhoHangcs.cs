@@ -34,7 +34,7 @@ namespace giaodiencuoiki
 
         private void btn_addType_Click(object sender, EventArgs e)
         {
-            if (txt_typeName.Text != null) 
+            if (!txt_typeName.Text.Equals("")) 
             {
                 ProductType pt = new ProductType
                 {
@@ -199,8 +199,21 @@ namespace giaodiencuoiki
             txt_title.Text = null;
             txt_price.Text = null;
             txt_qty.Text = null;
-            txt_typeCode = null;
-            txt_typeName = null;
+            txt_typeCode.Text = null;
+            txt_typeName.Text = null;
+        }
+
+        private void btn_findProduct_Click(object sender, EventArgs e)
+        {
+            string keyword = txt_findProduct.Text;
+            if(keyword != "")
+            {
+                data_product.DataSource = this.db.Products.Where(obj => obj.Title.Contains(keyword)).ToList();
+            }
+            else
+            {
+                data_product.DataSource = this.db.Products.ToList();
+            }
         }
     }
 }

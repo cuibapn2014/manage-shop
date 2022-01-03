@@ -32,7 +32,7 @@ namespace giaodiencuoiki
 
         private void quảnLýBánHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (FrmQuanLyBanHang form = new QuanLyBanHang())
+            using (FrmQuanLyBanHang form = new FrmQuanLyBanHang())
             {
                 this.Hide();
                 form.ShowDialog();

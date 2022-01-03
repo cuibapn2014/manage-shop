@@ -333,6 +333,7 @@ namespace giaodiencuoiki
             this.btn_findProduct.TabIndex = 1;
             this.btn_findProduct.Text = "Tìm kiếm";
             this.btn_findProduct.UseVisualStyleBackColor = true;
+            this.btn_findProduct.Click += new System.EventHandler(this.btn_findProduct_Click);
             // 
             // txt_findProduct
             // 

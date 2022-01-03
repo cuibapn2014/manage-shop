@@ -37,15 +37,15 @@ namespace giaodiencuoiki
             this.btn_edit = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_title = new System.Windows.Forms.TextBox();
-            this.txt_idRisk = new System.Windows.Forms.TextBox();
-            this.txt_idInvoice = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_value = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txt_customer = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txt_idInvoice = new System.Windows.Forms.TextBox();
+            this.txt_title = new System.Windows.Forms.TextBox();
+            this.txt_idRisk = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data_risk)).BeginInit();
@@ -144,38 +144,23 @@ namespace giaodiencuoiki
             this.label4.TabIndex = 1;
             this.label4.Text = "Mô tả rủi ro";
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Mã sự cố";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(383, 80);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Giá trị thiệt hại";
             // 
-            // txt_title
+            // label5
             // 
-            this.txt_title.Location = new System.Drawing.Point(489, 13);
-            this.txt_title.Multiline = true;
-            this.txt_title.Name = "txt_title";
-            this.txt_title.Size = new System.Drawing.Size(327, 53);
-            this.txt_title.TabIndex = 0;
-            // 
-            // txt_idRisk
-            // 
-            this.txt_idRisk.Enabled = false;
-            this.txt_idRisk.Location = new System.Drawing.Point(130, 11);
-            this.txt_idRisk.Name = "txt_idRisk";
-            this.txt_idRisk.Size = new System.Drawing.Size(222, 22);
-            this.txt_idRisk.TabIndex = 0;
-            // 
-            // txt_idInvoice
-            // 
-            this.txt_idInvoice.Location = new System.Drawing.Point(130, 44);
-            this.txt_idInvoice.Name = "txt_idInvoice";
-            this.txt_idInvoice.Size = new System.Drawing.Size(222, 22);
-            this.txt_idInvoice.TabIndex = 0;
-            this.txt_idInvoice.TextChanged += new System.EventHandler(this.txt_idInvoice_TextChanged);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(18, 82);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(111, 17);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Tên khách hàng";
             // 
             // label2
             // 
@@ -193,14 +178,14 @@ namespace giaodiencuoiki
             this.txt_value.Size = new System.Drawing.Size(222, 22);
             this.txt_value.TabIndex = 0;
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(383, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 17);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Giá trị thiệt hại";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Mã sự cố";
             // 
             // txt_customer
             // 
@@ -209,14 +194,30 @@ namespace giaodiencuoiki
             this.txt_customer.Size = new System.Drawing.Size(222, 22);
             this.txt_customer.TabIndex = 0;
             // 
-            // label5
+            // txt_idInvoice
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 82);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 17);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Tên khách hàng";
+            this.txt_idInvoice.Location = new System.Drawing.Point(130, 44);
+            this.txt_idInvoice.Name = "txt_idInvoice";
+            this.txt_idInvoice.Size = new System.Drawing.Size(222, 22);
+            this.txt_idInvoice.TabIndex = 0;
+            this.txt_idInvoice.TextChanged += new System.EventHandler(this.txt_idInvoice_TextChanged);
+            this.txt_idInvoice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_idInvoice_KeyPress);
+            // 
+            // txt_title
+            // 
+            this.txt_title.Location = new System.Drawing.Point(489, 13);
+            this.txt_title.Multiline = true;
+            this.txt_title.Name = "txt_title";
+            this.txt_title.Size = new System.Drawing.Size(327, 53);
+            this.txt_title.TabIndex = 0;
+            // 
+            // txt_idRisk
+            // 
+            this.txt_idRisk.Enabled = false;
+            this.txt_idRisk.Location = new System.Drawing.Point(130, 11);
+            this.txt_idRisk.Name = "txt_idRisk";
+            this.txt_idRisk.Size = new System.Drawing.Size(222, 22);
+            this.txt_idRisk.TabIndex = 0;
             // 
             // FrmQuanLyRuiRo
             // 
